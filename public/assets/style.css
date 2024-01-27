@@ -19,7 +19,7 @@ ul {
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: var(--main-light-bg);
+    background-color: var(--primary-light-bg);
     -webkit-font-smoothing: antialiased;
     min-height: 200dvh;
 }
@@ -38,7 +38,7 @@ body {
     --font-medium: 18px;
     --font-big: 20px;
 
-    --shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.2);
+    --shadow: 0px 3px 9px 0px rgba(41, 41, 41, 0.1);
 }
 
 /* UTILITY CLASSES */
@@ -47,10 +47,9 @@ body {
     overflow-y: hidden;
 }
 
-.main-container {
+.container {
     width: 90%;
     margin-inline: auto;
-    padding-inline: 10px;
 }
 
 .txt-center {
@@ -58,6 +57,12 @@ body {
 }
 
 .section-title {}
+
+.section-details {}
+
+.image-wrapper {}
+
+.grid-item {}
 
 .btn {
     text-align: center;
@@ -74,7 +79,7 @@ body {
 
 
 @media screen and (min-width: 768px) {
-    .main-container {
+    .container {
         width: 60%;
     }
 }
@@ -91,7 +96,6 @@ body {
     height: 55px;
     /*     background-color: var(--primary-light-text);
     background-image: var(--light-gradient-bg); */
-    box-shadow: var(--shadow);
     position: absolute;
 }
 
@@ -138,7 +142,7 @@ body {
     z-index: 1;
     font-weight: 600;
     color: #ffffff;
-    font-size: var(--font-medium);
+    font-size: var(--font-small);
 }
 
 nav p {
@@ -164,12 +168,12 @@ nav p {
     width: 100%;
     min-height: 100dvh;
     height: 100dvh;
-    transition: 300ms;
     overflow-y: scroll;
     padding-top: 60px;
     padding-bottom: 30px;
-    z-index: 99;
     background-image: var(--light-gradient-bg);
+    z-index: 99;
+    transition: all ease 600ms;
 }
 
 .mobile-menu > * {
@@ -198,8 +202,6 @@ nav p {
     }
 
     .desktop-menu {
-        background-color: transparent;
-
         position: fixed;
         top: 0;
         left: 0;
@@ -208,8 +210,16 @@ nav p {
         flex-flow: row;
         justify-content: space-between;
         align-items: center;
-        height: 70px;
+        height: 90px;
         padding-inline: 10%;
+        transition: all 800ms ease;
+    }
+
+    .desktop-menu.scroll {
+        opacity: 1;
+        background-image: var(--light-gradient-bg);
+        height: 60px;
+        box-shadow: var(--shadow);
     }
 
     .desktop-menu nav {
@@ -230,15 +240,25 @@ nav p {
 /* MAIN */
 
 .hero-section {
+    background-attachment: stat;
     background-color: var(--primary-light-bg);
     background-image: var(--light-gradient-bg);
     height: 100dvh;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-grid-item:first-of-type {
     display: none;
 }
 
+.wave {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    width: 200%;
+    bottom: -10px;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -265,4 +285,10 @@ nav p {
         padding: 30px;
         max-width: 600px;
     }
+
+    .wave {
+        width: 100%;
+    }
+
+
 }

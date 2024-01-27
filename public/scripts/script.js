@@ -1,3 +1,5 @@
+// MENU
+
 const hamburgerMenu = document.querySelector(".hamburger");
 const mobileMenu = document.querySelector(".mobile-menu");
 
@@ -54,3 +56,15 @@ function scrollToSection(sectionId, distance) {
     });
   }
 }
+
+// MENU SCROLL EFFECT
+
+const stickyNavbar = document.querySelector(".desktop-menu");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    stickyNavbar.classList.add("scroll");
+  } else {
+    stickyNavbar.classList.remove("scroll");
+  }
+});
