@@ -68,3 +68,22 @@ document.addEventListener("scroll", () => {
     stickyNavbar.classList.remove("scroll");
   }
 });
+
+// COLLAPSIBLE CONTENT TRIGGER
+
+const questions = document.querySelectorAll(".question");
+
+function toggleAnswer(e) {
+  const answer = e.target.nextElementSibling;
+
+  answer.classList.toggle("hidden");
+
+  e.target.classList.toggle(
+    "hide-collapsible",
+    !answer.classList.contains("hidden")
+  );
+}
+
+questions.forEach(function (question) {
+  question.addEventListener("click", toggleAnswer);
+});

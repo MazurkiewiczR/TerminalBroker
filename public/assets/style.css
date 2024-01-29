@@ -15,7 +15,15 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* BLOCKS */
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -31,6 +39,8 @@ main section:not(:first-of-type) {
 p span {
     display: block;
 }
+
+
 
 /* VARIABLES */
 
@@ -138,7 +148,7 @@ p span {
     border-radius: 3px;
     background-color: var(--accent-color);
     box-shadow: var(--shadow);
-    transition: all ease 500ms;
+    transition: all ease 300ms;
 }
 
 .btn:hover,
@@ -349,6 +359,14 @@ nav p {
     margin-bottom: 8px;
 }
 
+.hero-btn-wrapper {
+    margin-block: 15px;
+}
+
+.hero-btn-wrapper .btn:hover {
+    font-size: 17px;
+}
+
 .wave {
     position: absolute;
     overflow: hidden;
@@ -424,15 +442,71 @@ nav p {
 .question {
     font-size: var(--font-big);
     color: var(--primary-light-text-80);
-    margin-block: 30px 15px;
+    margin-block: 15px 5px;
+    padding-left: 20px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.question::before {
+    content: "";
+    height: 3px;
+    width: 15px;
+    background: var(--primary-light-text-80);
+    position: absolute;
+    top: 12px;
+    left: 0;
+    transition: all ease 300ms;
+}
+
+.question::after {
+    content: "";
+    height: 3px;
+    width: 15px;
+    background: var(--primary-light-text-80);
+    position: absolute;
+    top: 12px;
+    left: 0;
+    transition: all ease 300ms;
+}
+
+.hide-collapsible::before {
+    transform: rotate(-45deg);
+}
+
+.hide-collapsible::after {
+    transform: rotate(45deg);
+}
+
+.hidden {
+    max-height: 0;
 }
 
 .answer {
     font-size: var(--font-small);
     color: var(--primary-light-text-60);
-    margin-block: 8px;
+    margin-block: 5px;
+    overflow: hidden;
+    transition: max-height ease 400ms;
 }
 
+.answer:not(.hidden) {
+    max-height: 250px;
+}
+
+/* .collapsible {
+    position: relative;
+}
+
+.collapse-trigger {
+    border: 1px solid red;
+    height: 4px;
+    width: 15px;
+    position: absolute;
+    bottom: 0;
+}
+ */
 .faq-grid {
     display: grid;
 }
