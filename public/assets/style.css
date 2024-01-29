@@ -25,7 +25,7 @@ body {
 }
 
 main section:not(:first-of-type) {
-    margin-block: 60px;
+    margin-block: 100px;
 }
 
 p span {
@@ -115,11 +115,19 @@ p span {
     background: linear-gradient(to right, rgb(250, 93, 84), rgb(21, 120, 177));
 }
 
-.image-wrapper {}
+.image-wrapper {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
 
-.grid-item {}
+.grid-item {
+    height: 100%;
+    width: 100%;
+}
 
 .btn {
+    cursor: pointer;
     text-align: center;
     font: inherit;
     font-size: var(--font-small);
@@ -130,7 +138,12 @@ p span {
     border-radius: 3px;
     background-color: var(--accent-color);
     box-shadow: var(--shadow);
+    transition: all ease 500ms;
+}
 
+.btn:hover,
+.btn:focus {
+    transform: scale(1.05);
 }
 
 
@@ -382,5 +395,67 @@ nav p {
         width: 100%;
     }
 
+}
+
+/* MISSION SECTION  */
+
+.grid-2-col {
+    display: grid;
+    gap: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    .grid-2-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
+
+/* COOPERATION STAGES */
+
+/* PARTNERSHIP */
+
+/* FAQ */
+
+.line {
+    display: none;
+}
+
+.question {
+    font-size: var(--font-big);
+    color: var(--primary-light-text-80);
+    margin-block: 30px 15px;
+}
+
+.answer {
+    font-size: var(--font-small);
+    color: var(--primary-light-text-60);
+    margin-block: 8px;
+}
+
+.faq-grid {
+    display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+
+    .line {
+        display: block;
+        margin-block: 10px;
+        grid-column: 1 / -1;
+        height: 2px;
+        width: 100%;
+        border-radius: 5px;
+        background: linear-gradient(to right, rgb(250, 93, 84), rgb(21, 120, 177));
+    }
+}
+
+/* CONTACT SECTION */
+
+/* NEWSLETTER */
+
+/* FOOTER */
