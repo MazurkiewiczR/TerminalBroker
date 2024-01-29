@@ -28,6 +28,10 @@ main section:not(:first-of-type) {
     margin-block: 60px;
 }
 
+p span {
+    display: block;
+}
+
 /* VARIABLES */
 
 :root {
@@ -65,20 +69,50 @@ main section:not(:first-of-type) {
     margin-inline: auto;
 }
 
-.txt-center {
-    text-align: center;
+.text-justify {
+    text-align: justify;
 }
 
 .section-title {
-    margin-block: 12px;
+    margin-block: 12px 21px;
     color: var(--primary-light-text);
     font-size: var(--font-x-big);
+    position: relative;
+    width: fit-content;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: calc(100% + 20px);
+    max-width: 90vw;
+    left: 0;
+    bottom: -7px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(250, 93, 84), rgb(21, 120, 177));
 }
 
 .section-details {
-    margin-block: 10px;
+    margin-block: 10pxm;
     color: var(--primary-light-text-80);
     font-size: var(--font-medium);
+}
+
+.details-underline {
+    position: relative;
+}
+
+.details-underline::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    max-width: 90vw;
+    left: 0;
+    bottom: -20px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(250, 93, 84), rgb(21, 120, 177));
 }
 
 .image-wrapper {}
