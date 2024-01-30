@@ -13,12 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const scrollTargets = {
-  /*   "#fun_fact_link_desktop": { target: "#fun_facts", duration: 10 },
-  "#": { target: "#", duration: 20 },
-  "#": { target: "#", duration: 10 },
-  "#": { target: "#", duration: 10 },
-  "#": { target: "#", duration: 20 },
-  "#": { target: "#", duration: 10 }, */
+  "#desktop_about_link": { target: ".about", duration: 50 },
+  "#desktop_mission_link": { target: ".mission", duration: 50 },
+  "#desktop_cooperation_link": { target: ".cooperation-stages", duration: 50 },
+  "#desktop_faq_link": { target: ".faq", duration: 50 },
+  "#desktop_contact_link": { target: ".contact-section", duration: 50 },
+  "#mobile_about_link": { target: ".about", duration: 30 },
+  "#mobile_mission_link": { target: ".mission", duration: 30 },
+  "#mobile_cooperation_link": { target: ".cooperation-stages", duration: 30 },
+  "#mobile_faq_link": { target: ".faq", duration: 30 },
+  "#mobile_contact_link": { target: ".contact-section", duration: 30 },
 };
 
 for (const [selector, { target, duration }] of Object.entries(scrollTargets)) {

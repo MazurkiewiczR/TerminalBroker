@@ -16,16 +16,19 @@
         <nav>
           <ul>
             <li>
-              <p id="">O nas</p>
+              <p id="desktop_about_link">O nas</p>
             </li>
             <li>
-              <p id="">Misja</p>
+              <p id="desktop_mission_link">Misja</p>
             </li>
             <li>
-              <p id="">Współpraca</p>
+              <p id="desktop_cooperation_link">Współpraca</p>
             </li>
             <li>
-              <p id="">FAQ</p>
+              <p id="desktop_faq_link">FAQ</p>
+            </li>
+            <li>
+              <p id="desktop_contact_link">Kontakt</p>
             </li>
           </ul>
         </nav>
@@ -49,16 +52,19 @@
           <nav>
             <ul>
               <li>
-                <p id="">O nas</p>
+                <p id="mobile_about_link">O nas</p>
               </li>
               <li>
-                <p id="">Misja</p>
+                <p id="mobile_mission_link">Misja</p>
               </li>
               <li>
-                <p id="">Współpraca</p>
+                <p id="mobile_cooperation_link">Współpraca</p>
               </li>
               <li>
-                <p id="">FAQ</p>
+                <p id="mobile_faq_link">FAQ</p>
+              </li>
+              <li>
+                <p id="mobile_contact_link">Kontakt</p>
               </li>
             </ul>
           </nav>
@@ -67,7 +73,7 @@
         <div class="hero-grid">
           <div class="hero-grid-item">
             <div class="hero-image-wrapper">
-              <img src="#" alt="Termial płatniczy" width="150" height="100" />
+              <img src="#" alt="Termial płatniczy" width="150" height="150" />
             </div>
           </div>
           <div class="hero-text-container hero-grid-item">
@@ -111,31 +117,31 @@
         <h2 class="section-title">O nas</h2>
         <p class="section-details details-underline text-justify">
           <span>
-            Jesteśmy pionierami rynku! Jesteśmy pierwsi, wyjątkowi i jedyni,
-            którzy pomagają przedsiębiorcom i ich firmom w znalezieniu i
-            wynegocjowaniu najlepszych warunków (nie tylko finansowych) w
-            obszarze użytkowania terminali płatniczych.
+            <strong>Jesteśmy pionierami rynku!</strong> Jesteśmy pierwsi,
+            wyjątkowi i jedyni, którzy pomagają przedsiębiorcom i ich firmom w
+            znalezieniu oraz wynegocjowaniu najlepszych warunków (nie tylko
+            finansowych) w obszarze użytkowania terminali płatniczych.
           </span>
           <br />
           <span>
-            Nasze usługi są w najwyższym stopniu profesjonalne. Gwarantem tego
-            jest między innymi zespół, który tworzą ludzie z minimum rocznym
+            <strong>Nasze usługi są w najwyższym stopniu profesjonalne.</strong>
+            Gwarantem tego jest między innymi zespół, który tworzą ludzie z
             doświadczeniem w branży.
           </span>
           <br />
           <span>
             Jesteśmy z naszymi Klientami począwszy od sprawnego zdefiniowania i
             opracowania ich potrzeb, poprzez zebranie i negocjowanie ofert z
-            rynku oraz sporządzenie profesjonalnego raportu zawierającego nasze
-            rekomendacje. Na koniec oferujemy naszym Klientom pomoc w zawarciu
-            umowy na użytkowanie terminala płatniczego oraz wsparcie już w
-            trakcie jej trwania.
+            rynku, poprzez sporządzenie profesjonalnego raportu zawierającego
+            nasze rekomendacje. Na koniec oferujemy naszym Klientom pomoc w
+            zawarciu umowy na użytkowanie terminala płatniczego oraz wsparcie
+            już w trakcie jej trwania.
           </span>
           <br />
           <span>
             My wiemy, że dla przedsiębiorców użytkowanie terminala płatniczego
-            to usługa, na którą składa się wiele elementów i dlatego działamy w
-            imieniu Klientów i na ich rzecz.
+            to usługa, na którą składa się wiele elementów i dlatego
+            <strong>działamy w imieniu Klientów i na ich rzecz.</strong>
           </span>
         </p>
       </section>
@@ -151,7 +157,7 @@
             <p class="section-details details-underline text-justify">
               <span>
                 Naszą misją jest profesjonalne i skuteczne działanie na rzecz
-                naszych Klientów poprzez dostarczanie im dostępu do możliwości
+                naszych Klientów poprzez dostarczanie im dostępu do możliwości,
                 jakie daje rynek. Dzięki temu wspieramy przedsiębiorców w
                 rozwoju ich biznesów oraz obniżaniu kosztów prowadzenia
                 działalności.
@@ -229,7 +235,7 @@
       <section class="contact-section container">
         <div class="grid-2-col">
           <div class="grid-item">
-            <div>
+            <div class="underline-overflow">
               <h2 class="section-title before-underline">
                 Jesteś zainteresowany naszą ofertą lub chcesz zadać nam pytanie?
               </h2>
@@ -241,22 +247,30 @@
               <h2 class="section-title">Wolisz porozmawiać?</h2>
               <p class="section-details">Zadzwoń do nas!</p>
 
-              <p class="phone-num">+48 123 123 123</p>
-              <p class="phone-num">+48 12 123 12 34</p>
+              <div>
+                <p class="phone-num">+48 123 123 123</p>
+                <p class="phone-num">+48 12 123 12 34</p>
+              </div>
             </div>
           </div>
           <div class="grid-item contact-form-container">
             <form action="#" method="get" class="contact-form">
               <label for="text">Nazwa firmy</label>
-              <input type="text" />
+              <input type="text" required />
 
               <label for="tel">Telefon</label>
-              <input type="tel" />
+              <input type="tel" required />
 
               <label for="note">Notatka</label>
-              <textarea name="note" id="note" cols="30" rows="10"></textarea>
+              <textarea
+                name="note"
+                id="note"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
 
-              <input type="submit" value="Wyślij" />
+              <input type="submit" class="btn" value="Wyślij" />
             </form>
           </div>
         </div>
