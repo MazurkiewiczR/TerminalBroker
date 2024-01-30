@@ -256,10 +256,10 @@
           <div class="grid-item contact-form-container">
             <form action="#" method="get" class="contact-form">
               <label for="text">Nazwa firmy</label>
-              <input type="text" required />
+              <input type="text" required class="input" />
 
               <label for="tel">Telefon</label>
-              <input type="tel" required />
+              <input type="tel" required class="input" />
 
               <label for="note">Notatka</label>
               <textarea
@@ -267,6 +267,7 @@
                 id="note"
                 cols="30"
                 rows="10"
+                class="input textarea"
                 required
               ></textarea>
 
@@ -277,19 +278,19 @@
       </section>
 
       <section class="newsletter-section container">
-        <div class="newsletter-container">
+        <form action="#" method="get" class="newsletter-container">
           <h2 class="newsletter-title">Zapisz się do Newslettera</h2>
           <p class="section-details">
             Otrzymuj od nas regularne informacje na temat obecnych promocji i
             innych akcji
           </p>
-          <input type="email" />
+          <input type="email" required class="input" />
           <p class="newsletter-warning">
             Wysyłając adres wyrażam zgodę na otrzymywanie informacji o
             charakterze marketingowym
           </p>
-          <input type="submit" value="Zapisz się!" />
-        </div>
+          <input type="submit" class="btn" value="Zapisz się!" />
+        </form>
       </section>
     </main>
 
