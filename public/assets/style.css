@@ -368,6 +368,9 @@ nav p:hover {
     background-attachment: stat;
     background-color: var(--primary-light-bg);
     background-image: var(--light-gradient-bg);
+    /* background-image: url(./images/watch-payment.jpg); */
+    background-position: center;
+    background-size: cover;
     height: 100dvh;
     position: relative;
     overflow: hidden;
