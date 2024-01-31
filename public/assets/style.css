@@ -130,9 +130,15 @@ p span {
     display: flex;
     justify-items: center;
     align-items: center;
-    padding: 10px;
     margin-top: 20px;
-    border: 2px solid green;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
 }
 
 .grid-item {
@@ -182,6 +188,18 @@ p span {
 @media screen and (min-width: 768px) {
     .container {
         width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .image-wrapper {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .image-wrapper img {
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -364,7 +382,6 @@ nav p:hover {
 .hero-grid-item {
     height: 100%;
     width: 100%;
-    max-width: 600px;
 }
 
 .hero-grid-item:first-of-type {
@@ -377,6 +394,7 @@ nav p:hover {
     justify-content: center;
     margin-inline: auto;
     padding: 45px;
+    max-width: 600px;
 }
 
 .hero-text-container h1 {
@@ -413,10 +431,18 @@ nav p:hover {
         height: auto;
         justify-self: center;
         align-self: center;
-        border: 2px solid green;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .hero-image-wrapper img {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
     }
 
     .hero-grid-item:first-of-type {
+        max-width: 700px;
         display: flex;
         padding: 60px;
         justify-self: end;
@@ -459,6 +485,17 @@ nav p:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .mission-text-container {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .mission .image-wrapper {
+        box-shadow: var(--shadow);
+    }
 }
 
 /* COOPERATION STAGES */
@@ -707,6 +744,7 @@ nav p:hover {
 
 .footer-container .row:last-of-type {
     margin-bottom: 5px;
+    font-size: 12px;
 }
 
 .footer-container .row a i {
@@ -726,6 +764,10 @@ nav p:hover {
         margin: 20px 0;
         padding: 5px 0;
         font-size: var(--font-x-small);
+    }
+
+    .footer-container .row:last-of-type {
+        margin-bottom: 0;
     }
 
     .footer-container .row ul li {

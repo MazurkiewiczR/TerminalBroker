@@ -2,7 +2,7 @@ var animation = { duration: 40000, easing: (t) => t };
 
 var slider = new KeenSlider("#my-keen-slider", {
   loop: true,
-  renderMode: "performance",
+  renderMode: "precision",
   drag: true,
   slides: { perView: 1, spacing: 10 },
   breakpoints: {
