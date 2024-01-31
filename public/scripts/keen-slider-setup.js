@@ -6,7 +6,7 @@ var slider = new KeenSlider("#my-keen-slider", {
   drag: true,
   slides: { perView: 2, spacing: 10 },
   breakpoints: {
-    "(min-width: 768px)": {
+    "(min-width: 1024px)": {
       slides: { perView: 4, spacing: 50 },
     },
   },
