@@ -517,6 +517,7 @@ nav p:hover {
     margin-block: 5px;
     overflow: hidden;
     transition: max-height ease 400ms;
+    padding-inline: 20px;
 }
 
 .answer:not(.hidden) {
@@ -626,6 +627,7 @@ nav p:hover {
 }
 
 @media screen and (min-width: 1024px) {
+
     .newsletter-container {
         bottom: -50px;
         padding: 70px 180px;
