@@ -472,8 +472,6 @@ nav p:hover {
     margin-inline: auto;
 }
 
-
-
 [class^="number-slide"],
 [class*=" number-slide"] {
     background: grey;
@@ -482,31 +480,21 @@ nav p:hover {
     justify-content: center;
     color: #fff;
     height: 100px;
-    max-height: 100vh;
+    max-height: 100px;
 }
 
-.number-slide1 {
-    background: rgb(64, 175, 255);
-}
-
-.number-slide2 {
-    background: rgb(255, 75, 64);
-}
-
-.number-slide3 {
-    background: rgb(182, 255, 64);
-}
-
-.number-slide4 {
-    background: rgb(64, 255, 242);
-}
-
-.number-slide5 {
-    background: rgb(255, 64, 156);
-}
-
+.number-slide1,
+.number-slide2,
+.number-slide3,
+.number-slide4,
+.number-slide5,
 .number-slide6 {
-    background: rgb(64, 76, 255);
+    background: transparent;
+}
+
+.keen-slider__slide img {
+    max-height: 100%;
+    width: auto;
 }
 
 /* FAQ */
