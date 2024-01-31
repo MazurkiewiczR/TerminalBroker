@@ -292,8 +292,7 @@ nav p:hover {
 }
 
 .mobile-menu.active {
-    left: 0;
-    bottom: 0;
+    inset: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -387,13 +386,13 @@ nav p:hover {
     margin-bottom: 8px;
 }
 
-.hero-btn-wrapper {
+/* .hero-btn-wrapper {
     margin-block: 15px;
 }
 
 .hero-btn-wrapper .btn:hover {
     font-size: 17px;
-}
+} */
 
 .wave {
     position: absolute;
