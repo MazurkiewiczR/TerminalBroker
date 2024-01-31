@@ -4,10 +4,19 @@ var slider = new KeenSlider("#my-keen-slider", {
   loop: true,
   renderMode: "performance",
   drag: true,
-  slides: { perView: 2, spacing: 10 },
+  slides: { perView: 1, spacing: 10 },
   breakpoints: {
+    "(min-width: 450px)": {
+      slides: { perView: 2, spacing: 20 },
+    },
+    "(min-width: 900px)": {
+      slides: { perView: 3, spacing: 20 },
+    },
     "(min-width: 1024px)": {
-      slides: { perView: 4, spacing: 50 },
+      slides: { perView: 4, spacing: 30 },
+    },
+    "(min-width: 1440px)": {
+      slides: { perView: 5, spacing: 50 },
     },
   },
   created(s) {
