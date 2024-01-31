@@ -17,6 +17,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 /* BLOCKS */
@@ -654,18 +655,60 @@ nav p:hover {
 /* FOOTER */
 
 .footer-container {
+    text-align: left;
+    padding: 40px;
+    padding-bottom: 20px;
     width: 100%;
     background-image: var(--light-gradient-bg);
     color: var(--secondary-light-text);
-    font-size: var(--font-small);
-    padding: 30px;
+    font-size: var(--font-x-small);
 }
 
-.footer-grid {
-    display: grid;
-    row-gap: 16px;
+.footer-container .row ul {
+    width: 100%;
 }
 
-.footer-grid .grid-item p {
-    margin-top: 8px;
+.footer-container .row ul li {
+    display: block;
+    margin: 5px 0px;
+    text-align: left;
+}
+
+.footer-container .row {
+    width: 100%;
+    margin-block: 20px;
+}
+
+.footer-container .row:last-of-type {
+    margin-bottom: 5px;
+}
+
+.footer-container .row a i {
+    margin-right: 20px;
+    font-size: var(--font-big);
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        padding: 60px 0 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .footer-container .row {
+        margin: 20px 0;
+        padding: 5px 0;
+        font-size: var(--font-x-small);
+    }
+
+    .footer-container .row ul li {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+
+    .footer-container .row a i {
+        margin: 0 20px;
+        font-size: var(--font-x-big);
+    }
 }
