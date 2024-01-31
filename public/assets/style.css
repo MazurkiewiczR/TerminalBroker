@@ -503,6 +503,20 @@ nav p:hover {
 
 /* COOPERATION STAGES */
 
+.horizontal-img {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .vertical-img {
+        display: none;
+    }
+
+    .horizontal-img {
+        display: block;
+    }
+}
+
 /* PARTNERSHIP */
 
 .slider-container .title-wrapper {
