@@ -253,14 +253,17 @@ nav p:hover {
 }
 
 .logo {
-    width: 180px;
+    width: 80px;
     height: 100%;
-    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img {
-    width: 100%;
-    height: 100%;
+    height: 80%;
+    width: auto;
+    margin-block: auto;
 }
 
 .mobile-menu {
@@ -314,7 +317,8 @@ nav p:hover {
         justify-content: space-between;
         align-items: center;
         height: 90px;
-        padding-inline: 10%;
+        padding-right: 1%;
+        padding-left: 5%;
         transition: all 800ms ease;
     }
 
