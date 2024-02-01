@@ -296,7 +296,8 @@ nav p:hover {
     overflow-y: scroll;
     padding-top: 45px;
     padding-bottom: 30px;
-    background-image: var(--light-gradient-bg);
+    /* background-image: var(--light-gradient-bg); */
+    background-color: var(--primary-light-text);
     z-index: 99;
     transition: all ease 600ms;
 }
@@ -343,7 +344,8 @@ nav p:hover {
 
     .desktop-menu.scroll {
         opacity: 1;
-        background-image: var(--light-gradient-bg);
+        /* background-image: var(--light-gradient-bg); */
+        background-color: var(--primary-light-text-80);
         height: 60px;
         box-shadow: var(--shadow);
     }
@@ -367,12 +369,24 @@ nav p:hover {
 
 .hero-section {
     background-attachment: stat;
-    background-color: var(--primary-light-bg);
-    background-image: var(--light-gradient-bg);
+    /*     background-color: var(--primary-light-bg);
+    background-image: var(--light-gradient-bg); */
     /* background-image: url(./images/watch-payment.jpg); */
+
+    /* NEW DESIGN */
+
+    background-image: linear-gradient(110deg, rgba(250, 92, 84, 0.3) 0%,
+            rgba(21, 120, 177, 0.3) 60%,
+            rgba(180, 227, 238, 0.3) 100%),
+        url('./images/Obraz.png');
+
+    /* END NEW DESIGN */
+
     background-position: center;
     background-size: cover;
+    min-height: 500px;
     height: 100dvh;
+    max-height: 1200px;
     position: relative;
     overflow: hidden;
     color: var(--secondary-light-text);
@@ -428,6 +442,17 @@ nav p:hover {
     bottom: -10px;
 }
 
+/* NEW DESIGN */
+
+.hero-grid-item:first-of-type {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+
 @media screen and (min-width: 1024px) {
 
     .hero-image-wrapper {
@@ -464,6 +489,7 @@ nav p:hover {
     .hero-text-container h1 {
         font-size: 40px;
         margin-block: 20px;
+        letter-spacing: 2px;
     }
 
     .hero-text-container p {
@@ -473,6 +499,24 @@ nav p:hover {
 
     .wave {
         width: 100%;
+    }
+
+
+    /* NEW DESIGN */
+
+    .hero-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-grid-item {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .hero-text-container h1 {
+        font-size: 50px;
     }
 
 }
