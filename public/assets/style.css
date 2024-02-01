@@ -288,6 +288,7 @@ nav p:hover {
     position: fixed;
     display: block;
     top: 0;
+    bottom: 0;
     left: 100%;
     width: 100%;
     min-height: 100dvh;
@@ -406,9 +407,9 @@ nav p:hover {
 }
 
 .hero-text-container p {
-    font-size: var(--font-small);
+    font-size: var(--font-medium);
     color: var(--secondary-light-text-80);
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 /* .hero-btn-wrapper {
@@ -466,8 +467,8 @@ nav p:hover {
     }
 
     .hero-text-container p {
-        font-size: var(--font-medium);
-        margin-bottom: 10px;
+        font-size: var(--font-big);
+        margin-bottom: 12px;
     }
 
     .wave {
@@ -502,6 +503,10 @@ nav p:hover {
 }
 
 /* COOPERATION STAGES */
+
+.cooperation-stages {
+    margin-bottom: 60px;
+}
 
 .horizontal-img {
     display: none;
