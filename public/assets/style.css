@@ -282,6 +282,7 @@ nav p:hover {
     height: 80%;
     width: auto;
     margin-block: auto;
+    transform: rotate(180deg);
 }
 
 .mobile-menu {
@@ -378,11 +379,11 @@ nav p:hover {
     background-image: linear-gradient(110deg, rgba(250, 92, 84, 0.3) 0%,
             rgba(21, 120, 177, 0.3) 60%,
             rgba(180, 227, 238, 0.3) 100%),
-        url('./images/caffe-img2bw.png');
+        url('./images/orange-bgbw.png');
 
     /* END NEW DESIGN */
 
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
     min-height: 500px;
     height: 100dvh;
