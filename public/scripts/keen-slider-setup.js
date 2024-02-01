@@ -1,4 +1,4 @@
-var animation = { duration: 40000, easing: (t) => t };
+var animation = { duration: 50000, easing: (t) => t };
 
 var slider = new KeenSlider("#my-keen-slider", {
   loop: true,
@@ -7,7 +7,7 @@ var slider = new KeenSlider("#my-keen-slider", {
   slides: { perView: 1, spacing: 10 },
   breakpoints: {
     "(min-width: 450px)": {
-      slides: { perView: 2, spacing: 20 },
+      slides: { perView: 2, spacing: 10 },
     },
     "(min-width: 900px)": {
       slides: { perView: 3, spacing: 20 },

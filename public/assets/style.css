@@ -536,8 +536,8 @@ nav p:hover {
     align-items: center;
     justify-content: center;
     color: #fff;
-    height: 100px;
-    max-height: 100px;
+    height: 80px;
+    max-height: 80px;
 }
 
 .number-slide1,
