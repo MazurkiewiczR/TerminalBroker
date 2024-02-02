@@ -486,6 +486,11 @@ nav p:hover {
         display: none;
     }
 
+    .horizontal-img-container {
+        width: 80%;
+        margin-inline: auto;
+    }
+
     .horizontal-img {
         display: block;
     }
