@@ -439,7 +439,7 @@ nav p:hover {
     font-size: var(--font-medium);
     color: var(--secondary-light-text-80);
     margin-bottom: 9px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .wave {
