@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -376,8 +376,9 @@
           </div>
           <div class="grid-item contact-form-container">
             <form action="#" method="get" class="contact-form">
-              <label for="text">Nazwa firmy</label>
+              <label for="company_name">Nazwa firmy</label>
               <input
+                id="company_name"
                 type="text"
                 required
                 class="input"
@@ -386,10 +387,14 @@
 
               <label for="tel">Telefon</label>
               <input
+                id="tel"
                 type="tel"
                 required
                 class="input"
                 placeholder="123 456 789"
+                pattern="[0-9]{9}"
+                minlength="9"
+                maxlength="9"
               />
 
               <label for="note">Notatka</label>
@@ -417,15 +422,18 @@
             innych akcji
           </p>
           <input
+            id="email"
             type="email"
             required
             class="input"
             placeholder="jan.kowalski@email.pl"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
           />
           <p class="newsletter-warning">
             Wysyłając adres wyrażam zgodę na otrzymywanie informacji o
             charakterze marketingowym
           </p>
+
           <div class="newsletter-btn-wrapper">
             <input type="submit" class="btn" value="Zapisz się!" />
           </div>
