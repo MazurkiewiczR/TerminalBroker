@@ -401,6 +401,23 @@ nav p:hover {
 
 /* MAIN */
 
+#scrollToTopBtn {
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: var(--font-medium);
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: all 300ms;
+}
+
 .hero-section {
     background-image: var(--hero-gradient-bg),
         url('./images/Caffe-hero.jpg');

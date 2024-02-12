@@ -91,3 +91,20 @@ function toggleAnswer(e) {
 questions.forEach(function (question) {
   question.addEventListener("click", toggleAnswer);
 });
+
+// SCROLL TO TOP BTN
+
+const scrollToTopBtn = document.querySelector("#scrollToTopBtn");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollToTopBtn.style.opacity = "1";
+  } else {
+    scrollToTopBtn.style.opacity = "0";
+  }
+});
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
