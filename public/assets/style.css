@@ -403,7 +403,7 @@ nav p:hover {
 
 .hero-section {
     background-image: var(--hero-gradient-bg),
-        url('./images/caffe-img1bw.png');
+        url('./images/Caffe-hero.jpg');
     background-position: top;
     background-size: cover;
     min-height: 500px;
