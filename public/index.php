@@ -1,3 +1,12 @@
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . "/../src/Service/XLSXService.php";
+
+
+if(!empty($_POST['newsletter_mail']) && $_POST['newsletter_mail'] != ""){
+  (new XLSXService)->updateExcel($_POST['newsletter_mail']);
+}
+?>
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -433,7 +442,7 @@
       </section>
 
       <section id="newsletter" class="newsletter-section container">
-        <form action="#" method="get" class="newsletter-container">
+        <form action="#" method="post" class="newsletter-container">
           <h2 class="newsletter-title">Zapisz się do Newslettera</h2>
           <p class="newsletter-details">
             Otrzymuj od nas regularne informacje na temat obecnych promocji i
@@ -446,6 +455,7 @@
             class="input"
             placeholder="jan.kowalski@email.pl"
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+            name="newsletter_mail"
           />
           <p class="newsletter-warning">
             Wysyłając adres wyrażam zgodę na otrzymywanie informacji o
